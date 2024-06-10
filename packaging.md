@@ -18,7 +18,15 @@ This part is specified in `[project]`.
 * Specify which files will be shipped in each build. Follow [this example](https://hatch.pypa.io/1.9/config/build/#patterns).
 
 ## Test build locally
-To be added.
+### Generate distribution files
+1. Create a new python virtual environment for packaging (no need to install any dependencies).
+2. Install hatch: `pip install hatch`.
+3. Navigate to the root directory of the project. It should contains `pyproject.toml`.
+4. Run `hatch build`. It will generate distribution files (e.g. the `.whl` file) in the `dist` directory of your project root directory.
+### Test distribution files
+1. Create a new python virtual environment for testing.
+2. Install package from the newly built distribution file: `pip install {your_distribution_file}.whl`.
+3. Test your package.
 
 ## Publish build
 To be added.
