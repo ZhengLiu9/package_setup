@@ -29,4 +29,4 @@ This part is specified in `[project]`.
 3. Test your package.
 
 ## Publish build
-To be added.
+Follow steps here: https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives
